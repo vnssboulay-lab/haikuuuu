@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px 16px;
+    background-color: #ffffff;
+    color: #222222;
+    font-family: "Century Gothic", Arial, sans-serif;
+}
+
+.page-container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.top-band {
+    padding: 14px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.top-band p {
+    margin: 0;
+    font-size: 15px;
+    color: #555555;
+}
+
+.title-section {
+    padding: 8px 16px 18px;
+    text-align: center;
+}
+
+.title-section h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 34px;
+    font-weight: normal;
+}
+
+.author {
+    margin: 4px 0 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 18px 24px 50px;
+}
+
+.image-box {
+    width: 400px;
+    margin: 0;
+    flex: 0 1 400px;
+}
+
+.image-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.haiku-box {
+    width: 400px;
+    min-height: 220px;
+    padding: 22px 18px;
+    flex: 0 1 400px;
+    background-color: #ffffff;
+    border: none;
+}
+
+.haiku-box h2 {
+    margin: 0 0 26px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.poem p {
+    margin: 0 0 5px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.bottom-band {
+    padding: 14px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.bottom-band p {
+    margin: 0;
+    font-size: 14px;
+    color: #555555;
+}
+
+@media (max-width: 760px) {
+    body {
+        padding: 10px;
+    }
+
+    .main-content {
+        flex-direction: column;
+        gap: 24px;
+        padding: 20px 16px 32px;
+    }
+
+    .image-box,
+    .haiku-box {
+        width: 100%;
+        max-width: 400px;
+        flex-basis: auto;
+    }
+
+    .haiku-box {
+        min-height: 0;
+    }
+}
